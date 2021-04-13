@@ -1,0 +1,10 @@
+# 系统级别的配置
+spring:
+  cloud:
+    config:
+      name: config-client   # 需要从git上读取的资源名称，不需要后缀
+      profile: test  # 指定dev环境
+      label: master # 指定master分支
+      uri: http://localhost:3344
+
+
